@@ -30,6 +30,6 @@
 
 # subdir
 
-!build/*
-#!build/
+!build/
+build/*
 bin/
