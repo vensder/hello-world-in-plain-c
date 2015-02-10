@@ -1,12 +1,11 @@
-/* hello.c */
+/* goodbye.c */
 #include <stdio.h>
 #include <string.h>
 
-void print_hello (void)
+void print_goodbye (void)
 {
-  const char * msg = "Hello World!\n";
+  const char * msg = "Goodbye World!\n";
   int printf_res = printf(msg);
-
   if (printf_res < strlen(msg))
 
   {
@@ -17,4 +16,5 @@ void print_hello (void)
     return 0;
 
   }
+
 }
