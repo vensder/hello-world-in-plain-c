@@ -1,5 +1,2 @@
 # hw
-
 Hello World!
-
-Hi!
