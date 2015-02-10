@@ -31,4 +31,5 @@
 # subdir
 
 build/*
+!build/
 bin/
