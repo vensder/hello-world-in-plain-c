@@ -1,6 +1,6 @@
 # Hello World in Plain C
 
-Just to test CI/CD for C.
+Just to test CI for C.
 
 ```bash
 make
