@@ -1,6 +1,6 @@
 # Makefile for Hello World project
 
-hello: main.o hello.o goodbye.o
+hello: main.o hello.o howitisgoing.o goodbye.o
 	gcc -o build/hello main.o hello.o goodbye.o
 
 main.o: main.c
