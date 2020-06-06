@@ -9,6 +9,9 @@ main.o: main.c
 hello.o: hello.c
 	gcc -c hello.c
 
+howitisgoing.o: howitisgoing.c
+	gcc -c howitisgoing.c
+
 goodbye.o: goodbye.c
 	gcc -c goodbye.c
 
