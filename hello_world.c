@@ -3,7 +3,11 @@
 
 int main(void)
 {
-if (hello() || howisitgoing() || cpu_freq() || goodbye())
-        return 1;
-    return 0;
+	if (hello() ||
+		howisitgoing() ||
+		cpu_model() ||
+		cpu_freq() ||
+		goodbye())
+		return 1;
+	return 0;
 }
