@@ -1,11 +1,9 @@
 /* main.c */
 
-int main (void)
+int main(void)
 {
-	print_hello ();
-	print_howitisgoing ();
-	print_goodbye ();
+	print_hello();
+	print_howitisgoing();
+	print_goodbye();
 	return 0;
 }
-
-

@@ -10,8 +10,11 @@ make clean
 
 ```bash
 make
+
 ./build/hello 
 Hello World!
+How it is going?
 Goodbye World!
+
 make clean
 ```
