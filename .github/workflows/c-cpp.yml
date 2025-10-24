@@ -11,6 +11,7 @@ on:
     branches: [ master, main ]
     paths-ignore:
       - '**/*.md' # To ignore all Markdown files in any directory
+      - 'LICENSE'
 
 jobs:
   build:
