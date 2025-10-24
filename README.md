@@ -5,7 +5,7 @@ Just to test CI for C.
 ```bash
 make
 
-./build/hello_world
+./build/hw
 Hello, World!
 How is it going?
 Model Name: Intel(R) Core(TM) i5-4300U CPU @ 1.90GHz
