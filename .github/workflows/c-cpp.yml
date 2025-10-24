@@ -2,12 +2,15 @@ name: C/C++ CI
 
 on:
   push:
+    branches: [ master, main ]
     paths-ignore: 
-      - 'README.md'
+      - '**/*.md' # To ignore all Markdown files in any directory
       - 'LICENSE'
-    branches: [ master ]
+
   pull_request:
-    branches: [ master ]
+    branches: [ master, main ]
+    paths-ignore:
+      - '**/*.md' # To ignore all Markdown files in any directory
 
 jobs:
   build:
