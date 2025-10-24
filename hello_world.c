@@ -3,7 +3,13 @@
 
 int main(void)
 {
-if (hello() || howisitgoing() || goodbye())
-        return 1;
-    return 0;
+	if (hello() ||
+		howisitgoing() ||
+		cpu_model() ||
+		cpu_freq() ||
+		check_vm() ||
+		sys_vendor() ||
+		goodbye())
+		return 1;
+	return 0;
 }
