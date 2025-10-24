@@ -7,6 +7,7 @@ int main(void)
 		howisitgoing() ||
 		cpu_model() ||
 		cpu_freq() ||
+		check_vm() ||
 		goodbye())
 		return 1;
 	return 0;

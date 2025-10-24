@@ -7,5 +7,6 @@ int howisitgoing(void);
 int goodbye(void);
 int cpu_freq(void);
 int cpu_model(void);
+int check_vm(void);
 
 #endif /* HELLO_H */
