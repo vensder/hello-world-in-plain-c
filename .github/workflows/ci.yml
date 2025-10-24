@@ -21,4 +21,6 @@ jobs:
     - uses: actions/checkout@v2
     - run: make
     - run: build/hello_world
+    - run: grep -q hypervisor /proc/cpuinfo && echo "Virtual Machine" || echo "Bare Metal"
+
     - run: make clean
