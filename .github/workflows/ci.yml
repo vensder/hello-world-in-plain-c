@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: build-plain-c
 
 on:
   push:
@@ -15,14 +15,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make
-    - name: run
-      run: build/hello
-    - name: make clean
-      run: make clean
+    - run: make
+    - run: build/hello
+    - run: make clean
