@@ -1,8 +1,9 @@
 /* goodbye.c */
 #include <stdio.h>
 #include <string.h>
+#include "hello.h"
 
-void print_goodbye(void)
+int print_goodbye(void)
 {
   const char *msg = "Goodbye World!\n";
   int printf_res = printf(msg);
