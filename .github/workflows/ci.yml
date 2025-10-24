@@ -23,5 +23,5 @@ jobs:
     - run: build/hello_world
     - run: grep -q hypervisor /proc/cpuinfo && echo "Virtual Machine" || echo "Bare Metal"
     - run: ls /sys
-    - run: ls /sys/hypervisor
+    - run: cat /sys/firmware/dmi/id/sys_vendor
     - run: make clean
