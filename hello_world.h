@@ -5,5 +5,6 @@
 int hello(void);
 int howisitgoing(void);
 int goodbye(void);
+int cpu_freq(void);
 
 #endif /* HELLO_H */

@@ -1,7 +1,7 @@
 # Makefile for Hello World project
 
-hello_world: hello_world.o hello.o howisitgoing.o goodbye.o
-	gcc -o build/hello_world hello_world.o hello.o howisitgoing.o goodbye.o
+hello_world: hello_world.o hello.o howisitgoing.o goodbye.o cpu_freq.o
+	gcc -o build/hello_world hello_world.o hello.o howisitgoing.o goodbye.o cpu_freq.o
 
 hello_world.o: hello_world.c hello_world.h
 	gcc -c hello_world.c
@@ -14,6 +14,9 @@ howisitgoing.o: howisitgoing.c
 
 goodbye.o: goodbye.c
 	gcc -c goodbye.c
+
+cpu_freq.o: cpu_freq.c
+	gcc -c cpu_freq.c
 
 clean:
 	rm -f *.o build/hello_world

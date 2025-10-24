@@ -3,7 +3,7 @@
 
 int main(void)
 {
-if (hello() || howisitgoing() || goodbye())
+if (hello() || howisitgoing() || cpu_freq() || goodbye())
         return 1;
     return 0;
 }
