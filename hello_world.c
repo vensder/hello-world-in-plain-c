@@ -8,6 +8,7 @@ int main(void)
 		cpu_model() ||
 		cpu_freq() ||
 		check_vm() ||
+		sys_vendor() ||
 		goodbye())
 		return 1;
 	return 0;
