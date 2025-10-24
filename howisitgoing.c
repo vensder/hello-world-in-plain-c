@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int print_howisitgoing(void)
+int howisitgoing(void)
 {
   const char *msg = "How is it going?\n";
   int printf_res = printf(msg);

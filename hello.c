@@ -1,11 +1,10 @@
 /* hello.c */
 #include <stdio.h>
 #include <string.h>
-#include "hello.h"
 
-int print_hello(void)
+int hello(void)
 {
-  const char *msg = "Hello World!\n";
+  const char *msg = "Hello, World!\n";
   int printf_res = printf(msg);
 
   if (printf_res < strlen(msg))
