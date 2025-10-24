@@ -1,4 +1,4 @@
-/* hello_world.h */
+/* hw.h */
 #ifndef HELLO_H
 #define HELLO_H
 

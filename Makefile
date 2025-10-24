@@ -1,10 +1,10 @@
 # Makefile for Hello World project
 
-hello_world: hello_world.o hello.o howisitgoing.o goodbye.o cpu_freq.o cpu_model.o check_vm.o sys_vendor.o
-	gcc -o build/hello_world hello_world.o hello.o howisitgoing.o goodbye.o cpu_freq.o cpu_model.o check_vm.o sys_vendor.o
+hw: hw.o hello.o howisitgoing.o goodbye.o cpu_freq.o cpu_model.o check_vm.o sys_vendor.o
+	gcc -o build/hw hw.o hello.o howisitgoing.o goodbye.o cpu_freq.o cpu_model.o check_vm.o sys_vendor.o
 
-hello_world.o: hello_world.c hello_world.h
-	gcc -c hello_world.c
+hw.o: hw.c hw.h
+	gcc -c hw.c
 
 hello.o: hello.c
 	gcc -c hello.c
@@ -28,4 +28,4 @@ sys_vendor.o: sys_vendor.c
 	gcc -c sys_vendor.c
 
 clean:
-	rm -f *.o build/hello_world
+	rm -f *.o build/hw

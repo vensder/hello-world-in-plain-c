@@ -1,5 +1,5 @@
-/* hello_world.c */
-#include "hello_world.h"
+/* hw.c */
+#include "hw.h"
 
 int main(void)
 {
