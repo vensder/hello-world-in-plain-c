@@ -30,3 +30,7 @@
 
 # subdir
 
+.vscode/**
+
+!build/.gitkeep
+build/**
