@@ -20,5 +20,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: make
-    - run: build/hello
+    - run: build/hello_world
     - run: make clean
