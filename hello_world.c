@@ -3,8 +3,7 @@
 
 int main(void)
 {
-	hello();
-	howisitgoing();
-	goodbye();
-	return 0;
+if (hello() || howisitgoing() || goodbye())
+        return 1;
+    return 0;
 }
