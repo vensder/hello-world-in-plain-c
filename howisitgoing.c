@@ -4,7 +4,7 @@
 
 void print_howitisgoing(void)
 {
-  const char *msg = "How it is going?\n";
+  const char *msg = "How is it going?\n";
   int printf_res = printf(msg);
   if (printf_res < strlen(msg))
 
