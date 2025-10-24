@@ -22,5 +22,6 @@ jobs:
     - run: make
     - run: build/hello_world
     - run: grep -q hypervisor /proc/cpuinfo && echo "Virtual Machine" || echo "Bare Metal"
-    - run: grep -i "vmware\|virtualbox\|qemu\|xen" /proc/bus/pci/devices
+    - run: ls /sys
+    - run: ls /sys/hypervisor
     - run: make clean
