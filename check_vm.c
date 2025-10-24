@@ -1,4 +1,3 @@
-/* check_vm.c */
 #include <stdio.h>
 #include <string.h>
 
@@ -10,10 +9,12 @@ int check_vm(void)
         return 1;
     }
 
-    char line[256];
+    char line[1024];  /* Increased buffer size for long flags lines */
     int is_vm = 0;
 
     while (fgets(line, sizeof(line), fp)) {
+        /* Normalize line by removing trailing newline */
+        line[strcspn(line, "\n")] = '\0';
         if (strstr(line, "flags") && strstr(line, "hypervisor")) {
             is_vm = 1;
             break;
